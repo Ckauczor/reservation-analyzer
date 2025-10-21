@@ -56,7 +56,7 @@ Pattern: "(dank|gruß|grüßen)\\s+([a-zäöüß]+(?:\\s+[a-zäöüß]+)*)"
 src/com/example/reservations/
 ├── Main.java                 # Test-Anwendung mit Beispielen
 ├── Reservation.java          # Einfache Datenklasse (4 Felder)
-└── ReservationExtractor.java # Haupt-Extraktionslogik (73 Zeilen)
+└── ReservationExtractor.java # Haupt-Extraktionslogik (120 Zeilen)
 ```
 
 ## Ausführen
@@ -78,7 +78,7 @@ java -cp src com.example.reservations.Main
 - **Keine komplexen Datenstrukturen**
 
 ### ✅ **Direkte Regex-Patterns**
-- Inline-Regex statt gespeicherte Konstanten
+- Pattern-Konstanten
 - Switch-Statements statt Map-Lookups
 - Einfache String-Operationen statt Stream-Processing
 
@@ -104,7 +104,7 @@ Dieser ultra-simple Ansatz demonstriert wichtige Prinzipien für die Finanzindus
 ### 1. **Pattern Recognition in Dokumenten**
 - **Finanz**: Extraktion von IBAN, Beträgen, Vertragsdaten aus PDFs
 - **Hier**: Extraktion von Namen, Datum, Zeit aus Reservierungstext
-- **Vorteil**: Einfache Regex-Patterns sind auditierbar und nachvollziehbar
+- **Vorteil**: Regex-Patterns über Konstanten sind auditierbar und nachvollziehbar
 
 ### 2. **Compliance & Nachvollziehbarkeit**
 - **Finanz**: Regulatorische Anforderungen an transparente Algorithmen
