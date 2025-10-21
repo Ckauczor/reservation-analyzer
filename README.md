@@ -1,6 +1,6 @@
 # Ultra-Simple Reservation Analyzer
 
-Ein minimalistischer Java-Service zur Extraktion von Reservierungsinformationen aus deutschen Textnachrichten mit nur 73 Zeilen Code.
+Ein minimalistischer Java-Service zur Extraktion von Reservierungsinformationen aus deutschen Textnachrichten mit nur 120 Zeilen Code.
 
 ## Was passiert in diesem Code?
 
